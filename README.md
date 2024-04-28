@@ -22,4 +22,6 @@ TODO:
 
 - [ ] make a basic html frontend
 - [ ] automate `text` using a JS script, instead of hardcoding it
+
+
 [1]:	https://github.com/mozilla/geckodriver/releases
