@@ -3,3 +3,6 @@ captions/*.txt
 env
 .vscode
 captions.log
+logs.txt
+chromedriver
+venv

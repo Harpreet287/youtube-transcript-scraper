@@ -6,7 +6,7 @@ delimiter = ','                                                   # delimiter, e
 waittime = 10                                                     # seconds browser waits before giving up
 sleeptime = [5,15]                                                # random seconds range before loading next video id
 headless = False                                                  # select True if you want the browser window to be invisible (but not inaudible)
-
+chromedriver_path = "./chromedriver"
 # To enable AdBlock, it should be already installed on your Chorme nrowser
 # Fetch the `Profile Path` from chrome://version and then find the extentions folder
 # The AdBlock extention key is `cfhdojbkjhnklbpkdaibdccddilifddb`
@@ -113,7 +113,8 @@ if adblock_path:
 if headless:
     options.add_argument("--headless")
 
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome(executable_path=chromedriver_path, options=options)
+
 
 # track only youtube requests
 driver.scopes = [
