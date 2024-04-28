@@ -21,6 +21,7 @@ for event in data['events']:
             if 'utf8' in seg:
                 text += seg['utf8']
 
+
 if text.strip():
     max_input_length = 512
     truncated_text = text[:max_input_length]
